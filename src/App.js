@@ -1,13 +1,15 @@
 import React, {useEffect, useState} from "react";
 import ReactDom from "react-dom/client"
 import { Routes, Route, Link } from "react-router-dom"
+import InicioPag from "./components/InicioPag";
+import PerfilPag from "./components/PerfilPag";
 
 const App = () => {
   return (
-    <div>
-      <h1> Hey chiquitita, ¿Como tu ta? </h1>
-      <p> bn uwu </p>
-    </div>
+    <Routes>
+      <Route path="/" element={<InicioPag />}/>
+      <Route path="/perfil" element={<PerfilPag />} />
+    </Routes>
   )
 }
 
